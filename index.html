@@ -2,138 +2,230 @@
 <!DOCTYPE html>
 <!-- Оболочка документа, указываем язык содержимого -->
 <html lang="ru">
-	 <!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
-	<head>
-		<!-- Заголовок страницы в браузере -->
-		<title>GRID LAYOUT - Практика</title>
-		<!-- Подключаем CSS -->
-		<link rel="stylesheet" href="css/style.css">
-		<!-- Кодировка страницы -->
-		<meta charset="UTF-8">
-		<!-- Адаптив -->
-		<meta name="viewport" content="width=device-width">
-	</head>
-	<!-- Отображаемое тело страницы -->
-	<body>
-		<!-- Оболочка (grid-контейнер) -->
-		<div class="wrapper">
-			<!-- Шапка (grid - элемент) -->
-			<header class="header">
-				<a href="" class="header__logo"></a>
-				<nav class="header__menu">
-					<ul class="header__list">
-						<li><a href="" class="header__link">Пункт меню</a></li>
-						<li><a href="" class="header__link">Пункт меню</a></li>
-						<li><a href="" class="header__link">Пункт меню</a></li>
-						<li><a href="" class="header__link">Пункт меню</a></li>
-					</ul>
-				</nav>
-			</header>
-			<!-- Контент (grid-элемент + grid-контейнер) -->
-			<main class="main">
-				<!-- Сайдбар (grid-элемент) -->
-				<aside class="sidebar">
-					<nav class="sidebar__menu">
-						<ul class="sidebar__list">
-							<li><a href="" class="sidebar__link">Пункт меню</a></li>
-							<li><a href="" class="sidebar__link">Пункт меню</a></li>
-							<li><a href="" class="sidebar__link">Пункт меню</a></li>
-							<li><a href="" class="sidebar__link">Пункт меню</a></li>
-							<li><a href="" class="sidebar__link">Пункт меню</a></li>
+<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+
+<head>
+    <!-- Заголовок страницы в браузере -->
+    <title>Плитка, кафель, керамогранит.</title>
+    <!-- Подключаем CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Кодировка страницы -->
+    <meta charset="UTF-8">
+    <!-- Адаптив -->
+    <meta name="viewport" content="width=device-width">
+
+</head>
+<!-- Отображаемое тело страницы -->
+
+<body>
+    <!-- Оболочка (grid-контейнер) -->
+    <div class="wrapper">
+        <!-- Шапка (grid - элемент) -->
+        <header class="header">
+            <a href="" class="header__logo">
+                <img src="img/logo.jpg" alt=""></a>
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <nav class="header__menu">
+                <ul class="header__list">
+                    <li>
+                        <a href="" class="header__link">Главная</a>
+                        <span class="menu__arrow arrow"></span>
+                        <ul class="sub-menu__list">
+							<li>
+								<a href="" class="sub-menu__link">Уровень 2</a>
+							</li>
+							<li>
+								<a href="" class="sub-menu__link">Уровень 2</a>
+								<span class="sub-menu__arrow arrow"></span>
+								<ul class="sub-sub-menu__list">
+									<li>
+										<a href="" class="sub-sub-menu__link">Уровень 3</a>
+									</li>
+									<li>
+										<a href="" class="sub-sub-menu__link">Уровень 3</a>
+									</li>
+								</ul>						
+							</li>
+							<li>
+								<a href="" class="sub-menu__link">Уровень 2</a>
+							</li>
 						</ul>
-					</nav>
-				</aside>
-				<!-- Контент (grid-элемент) -->
-				<section class="content">
-					<h1>GRID Layout - Практика</h1>
-					<section class="content__gallery gallery">
-						<h2 class="gallery__title">Галерея</h2>
-						<div class="gallery__items">
-							<div class="gallery__item gallery__item_big">
-								<img src="img/01.jpg" alt="">
-							</div>
-							<div class="gallery__item">
-								<img src="img/02.jpg" alt="">
-							</div>
-							<div class="gallery__item">
-								<img src="img/03.jpg" alt="">
-							</div>
-							<div class="gallery__item">
-								<img src="img/04.jpg" alt="">
-							</div>
-							<div class="gallery__item">
-								<img src="img/05.jpg" alt="">
-							</div>
-							<div class="gallery__item">
-								<img src="img/06.jpg" alt="">
-							</div>
-							<div class="gallery__item">
-								<img src="img/07.jpg" alt="">
-							</div>
-							<div class="gallery__item gallery__item_big">
-								<img src="img/08.jpg" alt="">
-							</div>
-							<div class="gallery__item">
-								<img src="img/09.jpg" alt="">
-							</div>
-							<div class="gallery__item">
-								<img src="img/10.jpg" alt="">
-							</div>
-						</div>
-					</section>
-					<section class="content__products products">
-						<h2 class="products__title">Товары</h2>
-						<div class="products__items">
-							<div class="products__item">
-								<div class="products__image">
-									<img src="img/fls.jpg" alt="">
-								</div>
-								<div class="products__name">Футболка "Живи, а работай в свободное время!"</div>
-								<a href="" class="products__button">Купить</a>
-							</div>
-							<div class="products__item">
-								<div class="products__image">
-									<img src="img/fls.jpg" alt="">
-								</div>
-								<div class="products__name">Футболка "Живи, а работай в свободное время!"</div>
-								<a href="" class="products__button">Купить</a>
-							</div>
-							<div class="products__item">
-								<div class="products__image">
-									<img src="img/fls.jpg" alt="">
-								</div>
-								<div class="products__name">Футболка "Живи, а работай в свободное время!"</div>
-								<a href="" class="products__button">Купить</a>
-							</div>
-							<div class="products__item">
-								<div class="products__image">
-									<img src="img/fls.jpg" alt="">
-								</div>
-								<div class="products__name">Футболка "Живи, а работай в свободное время!"</div>
-								<a href="" class="products__button">Купить</a>
-							</div>
-							<div class="products__item">
-								<div class="products__image">
-									<img src="img/fls.jpg" alt="">
-								</div>
-								<div class="products__name">Футболка "Живи, а работай в свободное время!"</div>
-								<a href="" class="products__button">Купить</a>
-							</div>
-							<div class="products__item">
-								<div class="products__image">
-									<img src="img/fls.jpg" alt="">
-								</div>
-								<div class="products__name">Футболка "Живи, а работай в свободное время!"</div>
-								<a href="" class="products__button">Купить</a>
-							</div>
-						</div>
-					</section>
-				</section>
-			</main>
-			<footer class="footer">
-				<div class="footer__copy">Copy, 2020</div>
-				<div class="footer__text">Lorem ipsum dolor sit amet.</div>
-			</footer>
-		</div>
-	</body>
+                    </li>
+                    <li>
+                        <a href="" class="header__link">Промо-акции</a>
+                    </li>
+                    <li>
+                        <a href="" class="header__link">Новинки</a>
+                        <span class="menu__arrow arrow"></span>
+                        <ul class="sub-menu__list">
+							<li>
+								<a href="" class="sub-menu__link">Уровень 2</a>
+							</li>
+							<li>
+								<a href="" class="sub-menu__link">Уровень 2</a>
+								<span class="sub-menu__arrow arrow"></span>
+								<ul class="sub-sub-menu__list">
+									<li>
+										<a href="" class="sub-sub-menu__link">Уровень 3</a>
+									</li>
+									<li>
+										<a href="" class="sub-sub-menu__link">Уровень 3</a>
+                                    </li>
+                                    <li>
+										<a href="" class="sub-sub-menu__link">Уровень 3</a>
+									</li>
+									<li>
+										<a href="" class="sub-sub-menu__link">Уровень 3</a>
+									</li>
+								</ul>						
+							</li>
+							<li>
+								<a href="" class="sub-menu__link">Уровень 2</a>
+							</li>
+						</ul>
+                    </li>
+                    <li>
+                        <a href="" class="header__link">Бренды</a>
+                    </li>
+                    <li>
+                        <a href="" class="header__link">Товары со скидкой</a>
+                    </li>
+                </ul>                                           
+            </nav>             
+        </header>         
+        <!-- Контент (grid-элемент + grid-контейнер) -->
+        <main class="main">
+            <!-- Сайдбар (grid-элемент) -->
+            <aside class="sidebar">
+                <nav class="sidebar__menu">
+                    <ul class="sidebar__list">
+                        <li><a href="" class="sidebar__link">Напольная плитка и Керамогранит</a></li>
+                        <li><a href="" class="sidebar__link">Плитка для ванной комнаты</a></li>
+                        <li><a href="" class="sidebar__link">Плитка для кухни</a></li>
+                        <li><a href="" class="sidebar__link">Плитка под камень</a></li>
+                        <li><a href="" class="sidebar__link">Сопутствующие товары (клей, затирка, смеси, люки)</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <!-- Контент (grid-элемент) -->
+            <section class="content"><h1>Керамика, клинкер, керамогранит, бетон.</h1>
+                <section class="content__gallery gallery">
+                    <h2 class="gallery__title">Галерея</h2>
+                    <div class="gallery__items">
+                        <div class="gallery__item gallery__item_big">
+                            <img src="img/01.jpg" alt="">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="img/02.jpg" alt="">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="img/03.jpg" alt="">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="img/04.jpg" alt="">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="img/05.jpg" alt="">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="img/06.jpg" alt="">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="img/07.jpg" alt="">
+                        </div>                                             
+                        <div class="gallery__item gallery__item_big">
+                            <img src="img/08.jpg" alt="">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="img/09.jpg" alt="">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="img/10.jpg" alt="">
+                        </div>    
+                                   
+                        <div class="gallery__item gallery__item_big">
+                            <img src="img/12.jpg" alt="">
+                        </div>                              
+                        <div class="gallery__item">
+                            <img src="img/14.jpg" alt="">
+                        </div> 
+                        <div class="gallery__item">
+                            <img src="img/15.jpg" alt="">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="img/11.jpg" alt="">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="img/13.jpg" alt="">
+                        </div>                        
+                    </div>
+                </section>
+                <section class="content__products products">
+                    <h2 class="products__title">Товары</h2>
+                    <div class="products__items">
+                        <div class="products__item">
+                            <div class="products__image">
+                                <img src="img/1.jpg" alt="">
+                            </div>
+                            <div class="products__name">Футболка "Живи, а работай в свободное время!"</div>
+                            <a href="" class="products__button">Купить</a>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__image">
+                                <img src="img/2.jpg" alt="">
+                            </div>
+                            <div class="products__name">Футболка "Живи, а работай в свободное время!"</div>
+                            <a href="" class="products__button">Купить</a>
+
+                            </a>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__image">
+                                <img src="img/3.jpg" alt="">
+                            </div>
+                            <div class="products__name">Футболка "Живи, а работай в свободное время!!!"</div>
+                            <a href="" class="products__button">
+                                <span class="products__buttontext">Купить</span>  
+                                <span class="products__buttonwaves"></span>
+                            </a>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__image">
+                                <img src="img/4.jpg" alt="">
+                            </div>
+                            <div class="products__name">Футболка "Живи, а работай в свободное время!"</div>
+                            <a href="" class="products__button">Купить</a>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__image">
+                                <img src="img/5.jpg" alt="">
+                            </div>
+                            <div class="products__name">Футболка "Живи, а работай в свободное время!"</div>
+                            <a href="" class="products__button">Купить</a>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__image">
+                                <img src="img/6.jpg" alt="">
+                            </div>
+                            <div class="products__name">Футболка "Живи, а работай в свободное время!"</div>
+                            <a href="" class="products__button">Купить</a>
+                        </div>
+                    </div>                    
+                </section>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__copy">Copy, 2020</div>
+            <div class="footer__text">Lorem ipsum dolor sit amet.</div>
+        </footer>   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!--<script src="https://code.jquery.com/jquery-3.4.1/jquery.min.js"></script>-->
+        <!--<script src="js/slick.min.js"></script>-->
+            <script src="js/script.js"></script>           
+    </div> 
+       
+</body>
+
 </html>
